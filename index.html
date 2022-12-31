@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Reid Lynch</title>
   <link rel="icon" href="favicon.ico">
   <style id="styles" type="text/css">
@@ -19,10 +20,12 @@
     }
     img.me {
       max-width: 150px;
+      height: auto;
       border-radius: 75px;
     }
     img.logo {
       max-width: 50px;
+      height: auto;
       filter: grayscale(1);
       padding: 0 15px;
     }
@@ -34,16 +37,22 @@
       opacity: 0.6;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div>
-    <img src="me.jpg" class="me">
+    <img src="me.jpg" class="me" width="1000" height="1000">
     <h1>Reid Lynch</h1>
     <div>
-      <a href="https://www.linkedin.com/in/reid-lynch/"><img src="linkedin.png" class="logo linkedin"></a>
-      <a href="https://github.com/reid-rigo/"><img src="github.png" class="logo github"></a>
+      <a href="https://www.linkedin.com/in/reid-lynch/">
+        <img src="linkedin.png" class="logo linkedin" width="635" height="540">
+      </a>
+      <a href="https://github.com/reid-rigo/">
+        <img src="github.png" class="logo github" width="120" height="120">
+      </a>
     </div>
   </div>
 </body>
