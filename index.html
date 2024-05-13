@@ -81,7 +81,7 @@
 
 <body>
   <div>
-    <img src="me.jpg" class="me grayscale" width="1000" height="1000" alt="Me">
+    <img src="me.jpg" class="me highlight" width="1000" height="1000" alt="Me">
     <h1>Reid Lynch</h1>
     <div>
       <a href="https://www.linkedin.com/in/reid-lynch/"><img src="linkedin.png" class="logo linkedin grayscale"
@@ -105,8 +105,6 @@
         elem.classList.add("highlight")
       }
     }
-
-    highlight(elements[0])
 
     addEventListener("mouseover", event => highlight(event.target))
     addEventListener("touchstart", event => highlight(event.target))
