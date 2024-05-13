@@ -97,15 +97,20 @@
       document.querySelector("img.linkedin"),
       document.querySelector("img.github")
     ]
-    elements[0].classList.add("highlight")
 
-    addEventListener("mouseover", (event) => {
-      const elem = elements.find(e => e === event.target)
+    function highlight(target) {
+      const elem = elements.find(e => e === target)
       if (elem) {
         elements.forEach(e => e.classList.remove("highlight"))
         elem.classList.add("highlight")
       }
-    })
+    }
+
+    highlight(elements[0])
+
+    addEventListener("mouseover", event => highlight(event.target))
+    addEventListener("touchstart", event => highlight(event.target))
+    addEventListener("touchend", event => highlight(event.target))
   </script>
 </body>
 
